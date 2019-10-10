@@ -1,9 +1,9 @@
 # CMIS102-Lab8
-CMIS 102 Hands-On Lab
+## CMIS 102 Hands-On Lab
 This hands-on lab allows you to follow and experiment with the critical steps of developing a program including the program description, analysis, test plan, and implementation with C code. The example provided uses sequential, repetition, selection statements, functions, strings and arrays.
-Program Description
+### Program Description
 This program will input and store meteorological data into an array. The program will prompt the user to enter the average monthly rainfall for a specific region and then use a loop to cycle through the array and print out each value. The program should store up 5 years of meteorological data. Data is collected once per month. The program should provide the option to the user of not entering any data.
-Analysis
+### Analysis
 I will use sequential, selection, and repetition programming statements and an array to store data.
 I will define a 2-D array of Float number: Raindata[][] to store the Float values input by the user. To store up to 5 years of monthly data, the array size should be at least 5*12 = 60 elements. In a 2D array this will be RainData[5][12]. We can use #defines to set the number of years and months to eliminate hard- coding values.
 A float number (rain) will also be needed to input the individual rain data.
@@ -11,7 +11,7 @@ A nested for loop can be used to iterate through the array to enter Raindata. A 
 A array of strings can be used to store year and month names. This will allow a tabular display with labels for the printout.
 Functions will be used to separate functionality into smaller work units. Functions for displaying the data and inputting the data will be used.
 A selection statement will be used to determine if data should be entered
-C Code
+### C Code
 The following is the C Code that will compile in execute in the online compilers.
 // C code
 // This program will input and store meteorological data into an array. // Developer: Faculty CMIS102
@@ -60,6 +60,7 @@ void printdata(){
 for (int month=0; month< NUMMONTHS; month++) { printf("%s\t %s\t %5.2f\n",
 years[year],months[month],Raindata[year][month]); }
 } }
+### Goal
 1. Demonstrate you successfully followed the steps in this lab by preparing screen captures of you running the lab as specified in the Instructions above.
 2. Modify the program to add a function to sum the rainfall for each year. (Hint: you need to sum for each year. You can do this using a looping structure). Support your experimentation with screen captures of executing the new code.
 3. Enhance the program to allow the user to enter another meteorological element such as windspeed (e.g. 2.4 mph). Note, the user should be able to enter both rainfall and windspeed in your new implementation. Support your experimentation with screen captures of executing the new code.
